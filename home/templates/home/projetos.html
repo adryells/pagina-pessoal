@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block link%}
+    <link rel="stylesheet" type="text/css" href="{% static 'projetos.css' %}">
+{%endblock%}
+{% block content %}
+
+<div id="projetos">
+{%for projeto in projetos%}
+	<li>
+		<h3>{{projeto.titulo}}</h3><br>
+		<a href="{{projeto.link}}"><img src="{{projeto.image.url}}" width="200px" height="150px"></a><br><br>
+		<h4>{{projeto.descricao}}</h4>
+	</li>
+{%endfor%}
+</div>
+{% endblock content%}

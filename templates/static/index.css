@@ -1,0 +1,35 @@
+
+section.desc{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+}
+section.desc:hover{
+	color: orange;
+}
+
+section.desc h2{
+	color: white;
+	font-size: 78px;
+	transition-property: color;
+	transition-duration: 3s;
+	transition-timing-function: ease;
+}
+section.desc h2:hover{
+	color: red;
+	font-size: 78px;
+}
+
+section.desc h2 > span{
+	background-color: black;
+	border-radius: 10px;
+	color: white;
+}
+
+section.desc p{
+	color: gray;
+	font-size: 20px;
+	margin-top: 30px;
+}
+

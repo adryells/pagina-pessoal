@@ -1,0 +1,28 @@
+
+#posts{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#posts a{
+    text-decoration: none;
+    flex-basis: 33%;
+    padding: 5% 0;
+}
+#posts a li h3{
+    color: brown;
+    padding: 5px;
+}
+#posts a li img{
+    border-radius: 20px;
+}
+#posts a li img:hover{
+    opacity: 0.5;
+    background-color:red;
+}

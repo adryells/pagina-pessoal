@@ -1,0 +1,28 @@
+
+
+#post{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+text-align: center;
+color: white;
+list-style: none;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+#post h2{
+color: white;
+padding: 5px;
+}
+#post img{
+border-radius: 20px;
+}
+#post p{
+color: gray;
+}
+#post h5{
+color: gold;
+}
+

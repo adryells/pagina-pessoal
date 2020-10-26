@@ -1,0 +1,32 @@
+
+#projetos{
+    display: flex;
+    text-align: center;
+    color: white;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#projetos li{
+    flex-basis: 33%;
+    padding: 5% 0;
+}
+#projetos li h3{
+    color: brown;
+    padding: 5px;
+}
+#projetos li img{
+    border-radius: 20px;
+}
+
+#projetos li:hover{
+    padding: 5% 5%;
+}
+#projetos li img:hover{
+    opacity: 0.5;
+    background-color:red;
+}
+

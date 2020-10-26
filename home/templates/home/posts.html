@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% load static %}
+{%block link%}
+    <link rel="stylesheet" type="text/css" href="{% static 'posts.css' %}">
+{%endblock%}
+{% block content %}
+<div id="posts">
+{%for post in posts%}
+	<a href="{% url 'post' post.id %}"><li>
+		<h3>{{post.titulo}}</h3><br>
+		<img src="{{post.image.url}}" width="200px" height="150px"><br><br>
+		<p>{{post.resumo}}</p>
+        <h5>{{post.autor}}</h5>
+	</li></a>
+{%endfor%}
+</div>
+{% endblock content%}
