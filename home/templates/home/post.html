@@ -5,9 +5,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'post.css' %}">
 {%endblock%}
 {% block content %}
-<div id="post">
-		<h2>{{post.titulo}}</h2><br><br>
-		<p>{{post.conteudo}}</p>
-        <h5>{{post.autor}}</h5>
-</div>
+
+		{{post.titulo}}
+        {{post.conteudo | safe}}       
+        {{post.autor}}
+
 {% endblock %}

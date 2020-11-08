@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .models import Projeto,Post,Categoria
-from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 class ProjetoAdmin(admin.ModelAdmin):
@@ -10,8 +9,7 @@ class ProjetoAdmin(admin.ModelAdmin):
     list_editable = ('titulo', 'link',)
 
 
-class PostAdmin(SummernoteModelAdmin):
-    summernote_fields = ('conteudo',)
+class PostAdmin(admin.ModelAdmin):
     list_display = ('id', 'titulo', 'categoria', 'data', 'autor', 'publicado',)
     list_display_links = ('id',)
     list_editable = ('titulo', 'categoria', 'data', 'autor', 'publicado',)

@@ -1,4 +1,4 @@
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from . import views
@@ -8,4 +8,5 @@ urlpatterns = [
     path('projetos/', views.projetos, name='projetos'),
     path('blog/', views.posts, name='blog'),
     path('blog/<int:post_id>/', views.post, name='post'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
