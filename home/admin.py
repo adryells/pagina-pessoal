@@ -3,10 +3,9 @@ from .models import Projeto,Post,Categoria
 
 # Register your models here.
 class ProjetoAdmin(admin.ModelAdmin):
-    fields = ('id', 'titulo', 'link',)
-    list_display = ('id', 'titulo', 'link',)
-    list_display_links = ('id',)
-    list_editable = ('titulo', 'link',)
+    list_display = ( 'titulo', 'link',)
+    list_display_links = ('titulo',)
+    list_editable = ('link',)
 
 
 class PostAdmin(admin.ModelAdmin):
